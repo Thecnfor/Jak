@@ -1,14 +1,14 @@
-# Binocular Vision & Perceptual Shift Analysis System
+# Jetson Orin Nano Binocular Vision Center
 
-这是一个基于 YOLOv8/v11 + OpenCV + CLIP 的双目视觉定位与感知偏移分析系统。
+这是一个基于 Jetson Orin Nano 的双目视觉中枢与感知大脑，集成 YOLOv8/v11 + OpenCV + CLIP 实现高精度三维定位与环境感知。
 
 ## 核心功能
 
-1.  **双目视觉定位**: 使用双目立体匹配 (Stereo SGBM) 和 YOLO 目标检测，计算目标的 3D 坐标 (X, Y, Z)。
-2.  **量化知觉偏移**:
-    *   **语义偏移分析**: 利用 OpenAI CLIP 模型计算图像与通用标签的相似度，判断观察是否“去标签化”。
-    *   **物理特征提取**: 计算图像的纹理熵 (Texture Entropy) 和物理细节密度 (Detail Density)。
-    *   **视觉重心预测**: 利用显著性图 (Saliency Map) 分析视觉重心是否从“功能中心”向“美学边缘”迁移。
+1.  **双目视觉定位 (3D Localization)**:
+    *   作为视觉感知大脑的核心，利用双目立体匹配 (Stereo SGBM) 结合 YOLO 目标检测，实时解算目标的三维空间坐标 (X, Y, Z)，实现精准的空间定位。
+2.  **视觉注意力与特征感知**:
+    *   **显著性分析**: 利用显著性图 (Saliency Map) 捕捉场景中的视觉热点。
+    *   **特征提取**: 辅助计算图像的纹理熵与细节密度，为分析视觉重心（如从功能区向边缘细节的迁移）提供数据支持，保留对环境美学特征的感知能力。
 
 ## 运行
 
